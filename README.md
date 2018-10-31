@@ -14,10 +14,10 @@ I wrote a post on Medium on this [here](http://bit.ly/2ERKQdX)
 
 The `CoreMLModel` and the images it was trained with can be found in the [releases](https://github.com/ShawonAshraf/Kacchi-No-Kacchi/releases) section of this repo.
 
-## Screenshots?
+## Screenshots? 
 How about a video demo?
 
-<iframe src="https://onedrive.live.com/embed?cid=A1C5A8A8D03783F6&resid=A1C5A8A8D03783F6%21109350&authkey=AI95SGdhhlsha54" width="1920" height="1080" frameborder="0" scrolling="no" allowfullscreen></iframe>
+![isyoutube](https://youtu.be/UfWQkiBJ0vw)
 
 ## License
 MIT
