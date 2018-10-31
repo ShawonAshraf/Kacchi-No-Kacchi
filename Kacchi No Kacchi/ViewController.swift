@@ -14,9 +14,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet var imageView: UIImageView!
     
+    // MARK: - image picker
     let imagePicker = UIImagePickerController()
     
-    // CoreML classificationRequest
+    // MARK: - CoreML classificationRequest
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             let model = try VNCoreMLModel(for: Kacchi_No_Kacchi_1().model)
@@ -26,7 +27,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     fatalError("Model failed to process image")
                 }
                 
-                print(results)
+                // process results
+                self!.processClassificationResults(results: results)
             })
             request.imageCropAndScaleOption = .centerCrop
             return request
@@ -43,7 +45,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.allowsEditing = true
     }
     
-    
+    // MARK: - ImagePicker delegate methods
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // deal with the edited image
         if let userPickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
@@ -56,14 +58,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    // MARK: - Load image source
     func loadImageSource() {
         // check if camera is available
+        // else load from photo library
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             imagePicker.sourceType = .photoLibrary
             return
         }
     }
     
+    // MARK: - Classification methods
     func runInference(on image: UIImage) {
         guard let binaryImage = CIImage(image: image) else {
             fatalError("Couldn't convert image to binary")
@@ -75,7 +80,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let handler = VNImageRequestHandler(ciImage: image)
         try! handler.perform([classificationRequest])
     }
+    
+    // MARK: - Result processing
+    func processClassificationResults(results: [VNClassificationObservation]) {
+        // the first result is the dominant result from classification
+        var navBarTitle = ""
+        
+        if let firstResult = results.first {
+            if firstResult.identifier.contains("kacchi") {
+                // set title to Kacchi
+                navBarTitle = "কাচ্চি"
+            } else {
+                // set title to No-Kacchi
+                navBarTitle = "নু-কাচ্চি"
+            }
+        } else {
+            navBarTitle = "কইতারি না এইডা কি!"
+        }
+        
+        updateNavbarTitle(with: navBarTitle)
+    }
+    
+    // MARK: - Update UI
+    func updateNavbarTitle(with title: String) {
+        self.navigationItem.title = title
+    }
 
+    // MARK: - Event handlers
     @IBAction func cameraButtonPressed(_ sender: Any) {
         loadImageSource()
         present(imagePicker, animated: true, completion: nil)
