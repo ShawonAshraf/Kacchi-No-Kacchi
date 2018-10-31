@@ -16,6 +16,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let imagePicker = UIImagePickerController()
     
+    // CoreML classificationRequest
+    lazy var classificationRequest: VNCoreMLRequest = {
+        do {
+            let model = try VNCoreMLModel(for: Kacchi_No_Kacchi_1().model)
+            
+            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+                guard let results = request.results as? [VNClassificationObservation] else {
+                    fatalError("Model failed to process image")
+                }
+                
+                print(results)
+            })
+            request.imageCropAndScaleOption = .centerCrop
+            return request
+        } catch {
+            fatalError("Failed to load Vision ML model: \(error)")
+        }
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +48,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // deal with the edited image
         if let userPickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imageView.image = userPickedImage
+            
+            // run inference
+            runInference(on: userPickedImage)
         }
+        
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
@@ -41,6 +64,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    func runInference(on image: UIImage) {
+        guard let binaryImage = CIImage(image: image) else {
+            fatalError("Couldn't convert image to binary")
+        }
+        classify(image: binaryImage)
+    }
+    
+    func classify(image: CIImage) {
+        let handler = VNImageRequestHandler(ciImage: image)
+        try! handler.perform([classificationRequest])
+    }
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
         loadImageSource()
