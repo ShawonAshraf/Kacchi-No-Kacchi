@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
-    func loadImagePicker() {
+    func loadImageSource() {
         // check if camera is available
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             imagePicker.sourceType = .photoLibrary
@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
-        loadImagePicker()
+        loadImageSource()
         present(imagePicker, animated: true, completion: nil)
     }
     
