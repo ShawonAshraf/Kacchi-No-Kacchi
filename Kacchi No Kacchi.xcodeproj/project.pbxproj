@@ -15,6 +15,9 @@
 		032F3886218A16AB00D15333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032F3884218A16AB00D15333 /* LaunchScreen.storyboard */; };
 		032F3891218A16AB00D15333 /* Kacchi_No_KacchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F3890218A16AB00D15333 /* Kacchi_No_KacchiTests.swift */; };
 		032F389C218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F389B218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift */; };
+		032F38AA218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 032F38A9218A17A800D15333 /* Kacchi-No-Kacchi.mlmodel */; };
+		032F38AB218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 032F38A9218A17A800D15333 /* Kacchi-No-Kacchi.mlmodel */; };
+		032F38AC218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 032F38A9218A17A800D15333 /* Kacchi-No-Kacchi.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		032F3897218A16AB00D15333 /* Kacchi No KacchiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kacchi No KacchiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		032F389B218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kacchi_No_KacchiUITests.swift; sourceTree = "<group>"; };
 		032F389D218A16AB00D15333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032F38A9218A17A800D15333 /* Kacchi-No-Kacchi.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Kacchi-No-Kacchi.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		032F3877218A16AA00D15333 /* Kacchi No Kacchi */ = {
 			isa = PBXGroup;
 			children = (
+				032F38A9218A17A800D15333 /* Kacchi-No-Kacchi.mlmodel */,
 				032F3878218A16AA00D15333 /* AppDelegate.swift */,
 				032F387A218A16AA00D15333 /* ViewController.swift */,
 				032F387C218A16AA00D15333 /* Main.storyboard */,
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032F387B218A16AA00D15333 /* ViewController.swift in Sources */,
+				032F38AA218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */,
 				032F3879218A16AA00D15333 /* AppDelegate.swift in Sources */,
 				032F3881218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld in Sources */,
 			);
@@ -270,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032F3891218A16AB00D15333 /* Kacchi_No_KacchiTests.swift in Sources */,
+				032F38AB218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032F389C218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift in Sources */,
+				032F38AC218A17A900D15333 /* Kacchi-No-Kacchi.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
