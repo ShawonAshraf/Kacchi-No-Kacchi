@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032F3879218A16AA00D15333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F3878218A16AA00D15333 /* AppDelegate.swift */; };
+		032F387B218A16AA00D15333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F387A218A16AA00D15333 /* ViewController.swift */; };
+		032F387E218A16AA00D15333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032F387C218A16AA00D15333 /* Main.storyboard */; };
+		032F3881218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 032F387F218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld */; };
+		032F3883218A16AB00D15333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032F3882218A16AB00D15333 /* Assets.xcassets */; };
+		032F3886218A16AB00D15333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032F3884218A16AB00D15333 /* LaunchScreen.storyboard */; };
+		032F3891218A16AB00D15333 /* Kacchi_No_KacchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F3890218A16AB00D15333 /* Kacchi_No_KacchiTests.swift */; };
+		032F389C218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F389B218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032F388D218A16AB00D15333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F386D218A16AA00D15333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032F3874218A16AA00D15333;
+			remoteInfo = "Kacchi No Kacchi";
+		};
+		032F3898218A16AB00D15333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F386D218A16AA00D15333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032F3874218A16AA00D15333;
+			remoteInfo = "Kacchi No Kacchi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032F3875218A16AA00D15333 /* Kacchi No Kacchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kacchi No Kacchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		032F3878218A16AA00D15333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		032F387A218A16AA00D15333 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		032F387D218A16AA00D15333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		032F3880218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kacchi_No_Kacchi.xcdatamodel; sourceTree = "<group>"; };
+		032F3882218A16AB00D15333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032F3885218A16AB00D15333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		032F3887218A16AB00D15333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032F388C218A16AB00D15333 /* Kacchi No KacchiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kacchi No KacchiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		032F3890218A16AB00D15333 /* Kacchi_No_KacchiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kacchi_No_KacchiTests.swift; sourceTree = "<group>"; };
+		032F3892218A16AB00D15333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032F3897218A16AB00D15333 /* Kacchi No KacchiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kacchi No KacchiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		032F389B218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kacchi_No_KacchiUITests.swift; sourceTree = "<group>"; };
+		032F389D218A16AB00D15333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032F3872218A16AA00D15333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F3889218A16AB00D15333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F3894218A16AB00D15333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032F386C218A16AA00D15333 = {
+			isa = PBXGroup;
+			children = (
+				032F3877218A16AA00D15333 /* Kacchi No Kacchi */,
+				032F388F218A16AB00D15333 /* Kacchi No KacchiTests */,
+				032F389A218A16AB00D15333 /* Kacchi No KacchiUITests */,
+				032F3876218A16AA00D15333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		032F3876218A16AA00D15333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032F3875218A16AA00D15333 /* Kacchi No Kacchi.app */,
+				032F388C218A16AB00D15333 /* Kacchi No KacchiTests.xctest */,
+				032F3897218A16AB00D15333 /* Kacchi No KacchiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032F3877218A16AA00D15333 /* Kacchi No Kacchi */ = {
+			isa = PBXGroup;
+			children = (
+				032F3878218A16AA00D15333 /* AppDelegate.swift */,
+				032F387A218A16AA00D15333 /* ViewController.swift */,
+				032F387C218A16AA00D15333 /* Main.storyboard */,
+				032F3882218A16AB00D15333 /* Assets.xcassets */,
+				032F3884218A16AB00D15333 /* LaunchScreen.storyboard */,
+				032F3887218A16AB00D15333 /* Info.plist */,
+				032F387F218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld */,
+			);
+			path = "Kacchi No Kacchi";
+			sourceTree = "<group>";
+		};
+		032F388F218A16AB00D15333 /* Kacchi No KacchiTests */ = {
+			isa = PBXGroup;
+			children = (
+				032F3890218A16AB00D15333 /* Kacchi_No_KacchiTests.swift */,
+				032F3892218A16AB00D15333 /* Info.plist */,
+			);
+			path = "Kacchi No KacchiTests";
+			sourceTree = "<group>";
+		};
+		032F389A218A16AB00D15333 /* Kacchi No KacchiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				032F389B218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift */,
+				032F389D218A16AB00D15333 /* Info.plist */,
+			);
+			path = "Kacchi No KacchiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032F3874218A16AA00D15333 /* Kacchi No Kacchi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032F38A0218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No Kacchi" */;
+			buildPhases = (
+				032F3871218A16AA00D15333 /* Sources */,
+				032F3872218A16AA00D15333 /* Frameworks */,
+				032F3873218A16AA00D15333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kacchi No Kacchi";
+			productName = "Kacchi No Kacchi";
+			productReference = 032F3875218A16AA00D15333 /* Kacchi No Kacchi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		032F388B218A16AB00D15333 /* Kacchi No KacchiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032F38A3218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No KacchiTests" */;
+			buildPhases = (
+				032F3888218A16AB00D15333 /* Sources */,
+				032F3889218A16AB00D15333 /* Frameworks */,
+				032F388A218A16AB00D15333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032F388E218A16AB00D15333 /* PBXTargetDependency */,
+			);
+			name = "Kacchi No KacchiTests";
+			productName = "Kacchi No KacchiTests";
+			productReference = 032F388C218A16AB00D15333 /* Kacchi No KacchiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		032F3896218A16AB00D15333 /* Kacchi No KacchiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032F38A6218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No KacchiUITests" */;
+			buildPhases = (
+				032F3893218A16AB00D15333 /* Sources */,
+				032F3894218A16AB00D15333 /* Frameworks */,
+				032F3895218A16AB00D15333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032F3899218A16AB00D15333 /* PBXTargetDependency */,
+			);
+			name = "Kacchi No KacchiUITests";
+			productName = "Kacchi No KacchiUITests";
+			productReference = 032F3897218A16AB00D15333 /* Kacchi No KacchiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032F386D218A16AA00D15333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Shawon Ashraf";
+				TargetAttributes = {
+					032F3874218A16AA00D15333 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					032F388B218A16AB00D15333 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 032F3874218A16AA00D15333;
+					};
+					032F3896218A16AB00D15333 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 032F3874218A16AA00D15333;
+					};
+				};
+			};
+			buildConfigurationList = 032F3870218A16AA00D15333 /* Build configuration list for PBXProject "Kacchi No Kacchi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032F386C218A16AA00D15333;
+			productRefGroup = 032F3876218A16AA00D15333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032F3874218A16AA00D15333 /* Kacchi No Kacchi */,
+				032F388B218A16AB00D15333 /* Kacchi No KacchiTests */,
+				032F3896218A16AB00D15333 /* Kacchi No KacchiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032F3873218A16AA00D15333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F3886218A16AB00D15333 /* LaunchScreen.storyboard in Resources */,
+				032F3883218A16AB00D15333 /* Assets.xcassets in Resources */,
+				032F387E218A16AA00D15333 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F388A218A16AB00D15333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F3895218A16AB00D15333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032F3871218A16AA00D15333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F387B218A16AA00D15333 /* ViewController.swift in Sources */,
+				032F3879218A16AA00D15333 /* AppDelegate.swift in Sources */,
+				032F3881218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F3888218A16AB00D15333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F3891218A16AB00D15333 /* Kacchi_No_KacchiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032F3893218A16AB00D15333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F389C218A16AB00D15333 /* Kacchi_No_KacchiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032F388E218A16AB00D15333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032F3874218A16AA00D15333 /* Kacchi No Kacchi */;
+			targetProxy = 032F388D218A16AB00D15333 /* PBXContainerItemProxy */;
+		};
+		032F3899218A16AB00D15333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032F3874218A16AA00D15333 /* Kacchi No Kacchi */;
+			targetProxy = 032F3898218A16AB00D15333 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		032F387C218A16AA00D15333 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032F387D218A16AA00D15333 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		032F3884218A16AB00D15333 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032F3885218A16AB00D15333 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		032F389E218A16AB00D15333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032F389F218A16AB00D15333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032F38A1218A16AB00D15333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No Kacchi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-Kacchi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032F38A2218A16AB00D15333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No Kacchi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-Kacchi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		032F38A4218A16AB00D15333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No KacchiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-KacchiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kacchi No Kacchi.app/Kacchi No Kacchi";
+			};
+			name = Debug;
+		};
+		032F38A5218A16AB00D15333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No KacchiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-KacchiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kacchi No Kacchi.app/Kacchi No Kacchi";
+			};
+			name = Release;
+		};
+		032F38A7218A16AC00D15333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No KacchiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-KacchiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kacchi No Kacchi";
+			};
+			name = Debug;
+		};
+		032F38A8218A16AC00D15333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kacchi No KacchiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shawonashraf.Kacchi-No-KacchiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kacchi No Kacchi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032F3870218A16AA00D15333 /* Build configuration list for PBXProject "Kacchi No Kacchi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032F389E218A16AB00D15333 /* Debug */,
+				032F389F218A16AB00D15333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032F38A0218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No Kacchi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032F38A1218A16AB00D15333 /* Debug */,
+				032F38A2218A16AB00D15333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032F38A3218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No KacchiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032F38A4218A16AB00D15333 /* Debug */,
+				032F38A5218A16AB00D15333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032F38A6218A16AB00D15333 /* Build configuration list for PBXNativeTarget "Kacchi No KacchiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032F38A7218A16AC00D15333 /* Debug */,
+				032F38A8218A16AC00D15333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		032F387F218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				032F3880218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodel */,
+			);
+			currentVersion = 032F3880218A16AA00D15333 /* Kacchi_No_Kacchi.xcdatamodel */;
+			path = Kacchi_No_Kacchi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 032F386D218A16AA00D15333 /* Project object */;
+}
