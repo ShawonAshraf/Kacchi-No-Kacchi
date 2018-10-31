@@ -17,7 +17,7 @@ The `CoreMLModel` and the images it was trained with can be found in the [releas
 ## Screenshots?
 How about a video demo?
 
-<iframe src="https://onedrive.live.com/embed?cid=A1C5A8A8D03783F6&resid=A1C5A8A8D03783F6%21109350&authkey=AI95SGdhhlsha54" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://onedrive.live.com/embed?cid=A1C5A8A8D03783F6&resid=A1C5A8A8D03783F6%21109350&authkey=AI95SGdhhlsha54" width="1920" height="1080" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ## License
 MIT
