@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
-        
+        present(imagePicker, animated: true, completion: nil)
     }
     
 }
