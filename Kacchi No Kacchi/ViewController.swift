@@ -92,7 +92,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 navBarTitle = "কাচ্চি"
             } else {
                 // set title to No-Kacchi
-                navBarTitle = "নু-কাচ্চি"
+                navBarTitle = "না এইডা কাচ্চি না"
             }
         } else {
             navBarTitle = "কইতারি না এইডা কি!"
