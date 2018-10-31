@@ -24,6 +24,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
     }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // deal with the edited image
+        if let userPickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            imageView.image = userPickedImage
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
