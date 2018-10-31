@@ -21,7 +21,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         // imagePicker properties
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
     }
     
@@ -34,8 +33,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    func loadImagePicker() {
+        // check if camera is available
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            imagePicker.sourceType = .photoLibrary
+            return
+        }
+    }
+    
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
+        loadImagePicker()
         present(imagePicker, animated: true, completion: nil)
     }
     
