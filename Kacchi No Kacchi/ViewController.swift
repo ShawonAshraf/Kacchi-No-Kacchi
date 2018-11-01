@@ -62,9 +62,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func loadImageSource() {
         // check if camera is available
         // else load from photo library
-        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.sourceType = .camera
+        } else {
             imagePicker.sourceType = .photoLibrary
-            return
         }
     }
     
